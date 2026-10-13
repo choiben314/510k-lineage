@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+title: "510(k) Lineage"
+abstract: "Predicate links extracted from every FDA 510(k) summary the FDA hosts, with the page and quote behind each link, and the code that produced them."
+type: dataset
+authors:
+  - family-names: Choi
+    given-names: Ben
+repository-code: "https://github.com/choiben314/510k-lineage"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: "2026-10-13"
+keywords:
+  - FDA
+  - 510(k)
+  - medical devices
+  - predicate devices
