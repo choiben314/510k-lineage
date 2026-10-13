@@ -1,0 +1,12 @@
+__pycache__/
+*.py[oc]
+.venv
+.env
+.DS_Store
+
+# Pipeline working data (downloads, PDFs, text, database). The published
+# dataset lives in dataset/.
+data/*
+!data/raw/
+data/raw/*
+!data/raw/manifest.jsonl

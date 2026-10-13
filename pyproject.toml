@@ -1,0 +1,37 @@
+[project]
+name = "predicate-graph"
+version = "0.1.0"
+description = "FDA 510(k) predicate links extracted from every 510(k) summary"
+readme = "README.md"
+authors = [
+    { name = "Ben Choi" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=1.3.0",
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "instructor>=1.16.0",
+    "polars>=1.43.2",
+    "pydantic>=2.13.5",
+    "pyobjc-framework-vision>=12.2.2",
+    "pyrate-limiter>=4.5.0",
+    "rapidfuzz>=3.14.6",
+    "scikit-learn>=1.9.0",
+    "typer>=0.27.1",
+    "uvicorn>=0.52.4",
+]
+
+[project.scripts]
+pg = "predicate_graph.cli:main"
+predicate-graph = "predicate_graph.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.3",
+]
